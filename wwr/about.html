@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About White Water Rafting Adventures in Uganda">
+  <meta name="description" content="Uganda's premier whitewater rafting on the Nile - Adventure awaits with Nile Rage Rafting">
   <meta name="author" content="Your Name">
   <title>About Us | Nile Rage Rafting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,43 +13,83 @@
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Nile Rage Rafting Logo">
+    <a href="index.html">
+      <img src="images/logo.svg" alt="Nile Rage Rafting Logo" width="150">
+    </a>
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
+      <a href="about.html" class="active">About Us</a>
       <a href="trips.html">Trips</a>
       <a href="contact.html">Contact Us</a>
     </nav>
   </header>
+
   <main>
     <div class="hero">
-      <img src="images/hero.jpg" alt="Nile River Rafting">
-      <h1>Nile Rage Rafting</h1>
+      <img src="images/hero.webp" alt="Rafting on the Nile River" class="hero-image">
+      <h1>Conquer the Nile's Fury</h1>
       <article>
-        <img src="images/happy-client.jpg" alt="Happy Client">
-        <p>Our mission: To deliver heart-pounding, safe adventures on the Nile while preserving Uganda's wild beauty. <em>Expect to get wet, wild, and hooked!</em></p>
+        <img src="images/happy-client.webp" alt="Smiling rafters after adventure" class="client-image">
+        <p>Since 2010, we've safely guided over 15,000 adventurers through Grade 5 rapids. <em>100% Ugandan crew. 100% unforgettable.</em></p>
       </article>
     </div>
-    <section>
-      <h2>History</h2>
-      <p>Founded in 2010 by local river guides, we've grown from 2 rafts to East Africa's premier rafting company. Every rapid conquered writes Uganda's adventure tourism story.</p>
+
+    <section class="history">
+      <div class="container">
+        <h2>Our River Roots</h2>
+        <p>Born in Jinja by Nile river guides, we've grown from 2 rafts to East Africa's #1 rafting company. Every rapid conquered writes Uganda's adventure tourism story.</p>
+      </div>
     </section>
-    <section>
+
+    <section class="gallery">
       <h2>Adventure Awaits You!</h2>
-      <img src="images/rapid1.jpg" alt="Itanda Falls">
-      <img src="images/rapid2.jpg" alt="Bujagali Rapids">
-      <img src="images/rapid3.jpg" alt="Silverback Challenge">
-      <img src="images/rapid4.jpg" alt="Nile Special">
-      <img src="images/rapid5.jpg" alt="Overtime">
+      <div class="rapids-grid">
+        <figure>
+          <img src="images/rapid1.webp" alt="Itanda Falls - Grade 5">
+          <figcaption>Rwenzori Mountains</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rapid2.webp" alt="Bujagali Rapids">
+          <figcaption>Lake Katwe National Park</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rapid3.webp" alt="Silverback Challenge">
+          <figcaption>Murchison Falls N.P</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rapid4.webp" alt="Nile Special">
+          <figcaption>Queen Elizabeth N.P</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rapid5.webp" alt="Overtime Rapid">
+          <figcaption>Entebbe Beaches</figcaption>
+        </figure>
+      </div>
     </section>
   </main>
+
   <footer>
-    <p>&copy; 2024 | Nile Rage Rafting | Your Name</p>
-    <nav class="socialmedia">
-      <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
-      <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
-      <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
-    </nav>
+    <div class="footer-content">
+      <p>&copy; <span id="year">2024</span> | Nile Rage Rafting | Edwin Kambale</p>
+      
+      <div class="divider"><hr></div> 
+      
+      <nav class="socialmedia">
+        <a href="https://facebook.com" aria-label="Facebook">
+          <img src="images/facebook.svg" alt="Facebook icon">
+        </a>
+        <a href="https://instagram.com" aria-label="Instagram">
+          <img src="images/instagram.svg" alt="Instagram icon">
+        </a>
+        <a href="https://twitter.com" aria-label="Twitter">
+          <img src="images/twitter.svg" alt="Twitter icon">
+        </a>
+      </nav>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
