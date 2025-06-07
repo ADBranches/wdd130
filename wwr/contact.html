@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Nile Rage Rafting - Book your Ugandan whitewater adventure today">
+  <meta name="author" content="Edwin Kambale">
+  <title>Contact Us | Nile Rage Rafting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="images/logo.svg" alt="Nile Rage Rafting Logo" width="150">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <img src="images/contact-hero.webp" alt="Nile River Rafting Contact" class="hero-image">
+      <h1>Get In Touch</h1>
+      <article>
+        <img src="images/contact-team.webp" alt="Our friendly team">
+        <p>We're here to help you plan your perfect Nile adventure!</p>
+      </article>
+    </div>
+
+    <section class="history">
+      <h2>Our Location</h2>
+      <div class="contact-grid">
+        <div>
+          <h3>Address</h3>
+          <p>Nile Adventure Park<br>Jinja, Uganda</p>
+          
+          <h3>Phone</h3>
+          <p>+256 712 345 678</p>
+          
+          <h3>Email</h3>
+          <p>bookings@nilerage.com</p>
+        </div>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.647755955093!2d33.15421541526328!3d0.4472999997992275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177f9a0a8a1e1a1d%3A0xe2b1e5e5e5e5e5e5!2sNile%20Adventure%20Park!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2>Meet Our Team</h2>
+      <div class="rapids-grid">
+        <figure>
+          <img src="images/guide1.webp" alt="Guide Moses">
+          <figcaption>Moses<br><em>Head Guide</em></figcaption>
+        </figure>
+        <figure>
+          <img src="images/guide2.webp" alt="Officer Sarah">
+          <figcaption>Sarah<br><em>Safety Officer</em></figcaption>
+        </figure>
+        <figure>
+          <img src="images/guide3.webp" alt="Manager David">
+          <figcaption>David<br><em>Operations</em></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="history">
+        <h2>Contact Form</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <p>Purpose:</p>
+            <div class="radio-group">
+              <div>
+                <input type="radio" id="inquiry" name="purpose" value="inquiry" checked>
+                <label for="inquiry">General Inquiry</label>
+              </div>
+              <div>
+                <input type="radio" id="reservation" name="purpose" value="reservation">
+                <label for="reservation">Reservation</label>
+              </div>
+              <div>
+                <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                <label for="suggestion">Website Feedback</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Subscribe to Newsletter</label>
+          </div>
+          
+          <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="year">2024</span> | Nile Rage Rafting | Edwin Kambale</p>
+      
+      <div class="divider"><hr></div>
+      
+      <nav class="socialmedia">
+        <a href="https://facebook.com" aria-label="Facebook">
+          <img src="images/facebook.svg" alt="Facebook icon">
+        </a>
+        <a href="https://instagram.com" aria-label="Instagram">
+          <img src="images/instagram.svg" alt="Instagram icon">
+        </a>
+        <a href="https://twitter.com" aria-label="Twitter">
+          <img src="images/twitter.svg" alt="Twitter icon">
+        </a>
+      </nav>
+      
+      <a href="contact-wireframe.html" class="wireframe-link">View Wireframe</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
