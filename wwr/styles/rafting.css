@@ -96,7 +96,7 @@
   /* Active state for current page */
 nav a.active {
   background-color: var(--secondary-color);
-  border-radius: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -126,7 +126,7 @@ nav a.active {
     padding: 10px;
   }
   
-  .hero article {
+  /* .hero article {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -139,7 +139,7 @@ nav a.active {
     float: right;
     width: 100px;
     margin-left: 10px;
-  }
+  } */
   
   section {
     margin: 20px 0;
@@ -602,7 +602,7 @@ textarea:required:valid {
   gap: 3rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.; /* Match header, main, footer */
+  padding: 0 1rem; /* Match header, main, footer */
 }
 
 @media (min-width: 768px) {
@@ -617,7 +617,7 @@ textarea:required:valid {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(58, 90, 120, 0.85);
+  background-color: rgba(58, 90, 120, 0.9);
   color: white;
   padding: 1.5rem 3rem;
   font-size: 3rem;

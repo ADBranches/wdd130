@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Uganda's premier whitewater rafting on the Nile - Adventure awaits with Nile Rage Rafting">
+  <!-- Refined meta description for conciseness -->
+  <meta name="description" content="Join Nile Rage Rafting for thrilling Nile adventures. Explore trips, sign up, and book now!">
   <meta name="author" content="Edwin Kambale">
   <title>Home | Nile Rage Rafting</title>
   <link rel="stylesheet" href="styles/rafting.css">
@@ -24,63 +25,60 @@
       </ul>
     </nav>
   </header>
-
   <main class="home-content">
-    <div class="hero">
-      <img src="images/hero.webp" alt="Rafting on the Nile River">
+    <!-- Updated hero class to home-hero for full-width -->
+    <div class="home-hero">
+      <!-- Added loading="lazy" for optimization -->
+      <img src="images/hero.webp" alt="Rafting on the Nile River" loading="lazy">
       <h1>Experience the Mighty Nile</h1>
     </div>
-
-    <!-- Updated newsletter section -->
     <section class="newsletter">
-        <h2>Stay Updated</h2>
-        <form method="post" action="#" class="newsletter-form">
+      <h2>Stay Updated</h2>
+      <form method="post" action="#" class="newsletter-form">
         <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
         </div>
         <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
         </div>
         <button type="submit" class="cta-button">Subscribe</button>
-        </form>
+      </form>
     </section>
-
     <section class="cta">
       <h2>Ready for Adventure?</h2>
       <a href="trips.html" class="button">View Our Trips</a>
     </section>
-
-    <!-- Updated grid section -->
-    <section class="grid grid-features home-content">
-        <div class="grid-item feature-card">
+    <!-- Removed redundant grid class, kept grid-features -->
+    <section class="grid-features">
+      <div class="feature-card">
         <img src="images/rafting01.webp" alt="Rafting Adventure" loading="lazy">
         <div class="feature-content">
-            <h3>Exciting Rapids</h3>
-            <p>Experience thrilling Grade 5 rapids on the Nile River with our expert guides.</p>
+          <h3>Exciting Rapids</h3>
+          <p>Experience thrilling Grade 5 rapids on the Nile River with our expert guides.</p>
         </div>
-        </div>
-        <div class="grid-item feature-card">
+      </div>
+      <div class="feature-card">
         <img src="images/safety01.webp" alt="Safety First" loading="lazy">
         <div class="feature-content">
-            <h3>Expert Guides</h3>
-            <p>Our 100% Ugandan crew ensures your safety and enjoyment on every trip.</p>
+          <h3>Expert Guides</h3>
+          <p>Our 100% Ugandan crew ensures your safety and enjoyment on every trip.</p>
         </div>
-        </div>
-        <div class="grid-item feature-card">
+      </div>
+      <div class="feature-card">
         <img src="images/community01.webp" alt="Adventure Community" loading="lazy">
         <div class="feature-content">
-            <h3>Join Our Community</h3>
-            <p>Be part of Uganda’s adventure tourism story with Nile Rage Rafting.</p>
+          <h3>Join Our Community</h3>
+          <p>Be part of Uganda’s adventure tourism story with Nile Rage Rafting.</p>
         </div>
-        </div>
+      </div>
     </section>
   </main>
-
   <footer>
     <div class="index-footer-content">
-      <p>&copy; <span id="year">2024</span> | Edwin Kambale | Uganda</p>
+      <!-- Updated year to 2025 -->
+      <p>© <span id="year">2025</span> | Edwin Kambale | Uganda</p>
       <div class="divider"><hr></div>
       <nav class="socialmedia">
         <a href="https://facebook.com" aria-label="Facebook">
@@ -93,6 +91,12 @@
           <img src="images/twitter.svg" alt="Twitter icon">
         </a>
       </nav>
+      <!-- Added W3C validation badge -->
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+      </p>
     </div>
   </footer>
 </body>
